@@ -33,6 +33,31 @@ public class Programa {
 		
 		//System.out.println(numero_int == numero_string);  dá erro
 		System.out.println(((Object)valor1).getClass().getSimpleName());
+		System.out.println("--------------------------");
+		
+		char[] vogais = {'a', 'e', 'i', 'o', 'u'};
+				
+		for (int i = 0; i < vogais.length; ++ i) {
+            System.out.print(vogais[i] + " ");
+        }
+		
+		System.out.println(" ");
+		
+		for (char item: vogais) {
+	         System.out.println(item);
+	    }
+		
+		System.out.println("--------------------------");
+		
+		int[] numeros = {3, 4, 5, -5, 0, 12};
+        int soma = 0;
+      
+        for (int cada: numeros) {
+            soma += cada;
+        }
+      
+        System.out.println("numeros: " + numeros);
+        System.out.println("Sum = " + soma);
 		
 	}
 
